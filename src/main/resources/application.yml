@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: Cinesphere-backend
+
+profiles:
+  include: secret
