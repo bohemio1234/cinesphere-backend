@@ -36,12 +36,9 @@ public class MovieServiceImpl implements MovieService {
 
         TmdbResponseDto response = restTemplate.getForObject( uri, TmdbResponseDto.class );
 
-        List<MovieDto> movieDtos = response.getResults();
-
         if (response == null || response.getResults() == null) {
             return Collections.emptyList();
         }
-
 
         return response.getResults();
 

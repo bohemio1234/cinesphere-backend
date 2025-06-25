@@ -1,15 +1,15 @@
 spring:
   application:
     name: Cinesphere-backend
-  profiles:
+  profiles: #??????? ?? ???? ???. ??? secret? Include
     include: secret
-  datasource:
-    driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/cinesphere_db?createDatabaseIfNotExist=true&useSSL=false&serverTimezone=UTC&characterEncoding=UTF-8
+  datasource: #db???.
+    driver-class-name: com.mysql.cj.jdbc.Driver #????.
+    url: jdbc:mysql://localhost:3306/cinesphere_db?useSSL=false&serverTimezone=UTC&characterEncoding=UTF-8
 
   jpa:
     hibernate:
-      ddl-auto: update
+      ddl-auto: update #??? entity? ?? db???? ???? ????.
     properties:
       hibernate:
         format_sql: true
